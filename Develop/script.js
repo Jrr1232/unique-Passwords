@@ -55,8 +55,6 @@ function writePassword() {
     } else if (lowerCaseCharacters === true && numbersAllowed === true && specialCharacter === true) {
       randomSelectionArray.push(randomNumber, randomLetter, randomSpecial)
       var character = randomSelectionArray[randomThreeNumbers];
-      console.log(randomSelectionArray);
-      console.log(character);
       password.push(character);
     } else if (lowerCaseCharacters === false && numbersAllowed === true && specialCharacter === true) {
       var upperCaseAlphabet = 'abcdefghijklmnopqrstuvwxyz';
@@ -69,9 +67,24 @@ function writePassword() {
       password.push(character);
 
 
+    } else if (lowerCaseCharacters === true && numbersAllowed === false && specialCharacter === false) {
+
+      randomSelectionArray.push(randomLetter, randomLetter, randomLetter)
+      var character = randomSelectionArray[randomThreeNumbers];
+      console.log(character);
+
+      password.push(character);
+
+
+    } else {
+
+      randomSelectionArray.push(randomLetter, randomLetter, randomNumber)
+      var character = randomSelectionArray[randomThreeNumbers];
+      console.log(character);
+
+      password.push(character);
+
     }
-
-
   }
 
 
@@ -193,7 +206,6 @@ function writePassword() {
 
 
   passwordText.value = password.join('');
-  console.log(password);
 
 }
 
