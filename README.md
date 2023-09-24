@@ -27,7 +27,7 @@ URL - https://jrr1232.github.io/unique-Passwords/ 🎯
 
 ## 🏗️🚧 Built With 
 
--JQuery
+-JQuery.
 
 
 
